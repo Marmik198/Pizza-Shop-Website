@@ -1,0 +1,420 @@
+body,
+html {
+    height: 100%;
+    font-family: "Amatic SC", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/*Navbar*/
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar {
+    font-size: 24px;
+    background: black;
+    opacity: 0.6;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.navbtn {
+    float: left;
+    width: auto;
+    padding: 8px 16px;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    white-space: normal;
+}
+
+.navbtn:hover {
+    background: #ccc;
+    color: black;
+}
+
+
+.navbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+/*Header*/
+
+
+.bgimg {
+    background-image: url(../image/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90%;
+    filter: grayscale(50%);
+    position: relative;
+}
+
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 8px 16px;
+}
+
+.highlight {
+    background: black;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 8px 0 8px;
+    display: inline-block;
+}
+
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.logo {
+    font-size: 100px;
+    color: white;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+.logos {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.headbtn {
+    font-size: 36px;
+    padding: 10px 16px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    background: #000;
+    color: white;
+    white-space: nowrap;
+}
+
+
+.headbtn:hover {
+    background: #ccc;
+    color: black;
+}
+
+
+
+/*Menu*/
+
+
+#menu {
+    background: #000;
+    padding: 64px 16px;
+    color: white;
+    font-size: 36px;
+}
+
+
+.cont {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+.head {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 64px;
+    font-weight: 400;
+}
+
+
+.tabs {
+    border: 1px solid #616161;
+    text-align: center;
+}
+
+
+.tablink {
+    float: left;
+    width: 33.33%;
+    padding: 12px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+.tablink:hover {
+    background: #f44336;
+    color: white;
+}
+
+
+.tabs::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.menuitems {
+    padding: 32px 16px;
+    background: white;
+    color: black;
+}
+
+.menuitems h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.price {
+    float: right;
+    padding: 0 8px;
+    background: #616161;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+}
+
+.price::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.gray {
+    color: #616161;
+}
+
+.red {
+    background: #f44336;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.special {
+    padding: 0 8px;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+
+
+
+/*About*/
+
+
+#about {
+    background: #f44336;
+    filter: grayscale(75%);
+    padding: 64px 16px;
+    color: white;
+    font-size: 24px;
+}
+
+
+.chef {
+    float: right;
+    border-radius: 50%;
+    width: 150px;
+}
+
+
+.chef::after, .timerow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.rest {
+    width: 100%;
+    margin: 16px 0;
+    vertical-align: middle;
+    border: none;
+}
+
+
+.time {
+    float: left;
+    width: 50%;
+}
+
+
+
+.map {
+    width: 100%;
+    height: auto;
+    filter: grayscale(75%);
+    margin: 0;
+    border: 0;
+    vertical-align: middle;
+}
+
+
+
+/*Contact*/
+
+
+#contact {
+    background: #607d8b;
+    filter: grayscale(75%);
+    padding: 64px 16px;
+    color: white;
+    font-size: 24px;
+}
+
+
+.fyi {
+    padding: 0 8px;
+    background: #000;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.large {
+    font-size: 36px;
+}
+
+
+.int {
+    padding: 16px 0;
+    text-align: left;
+    border: 1px solid #ccc;
+    width: 100%;
+    display: block;
+    font: inherit;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 10px;
+}
+
+
+.submit {
+    padding: 8px 16px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font: inherit;
+    text-decoration: none;
+    background: #f1f1f1;
+    color: black;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+}
+
+
+.submit:hover {
+    background: #ccc;
+}
+
+
+/*Footer*/
+
+
+.foot {
+    padding: 48px;
+    font-size: 36px;
+    text-align: center;
+    background: #000;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+.footlink {
+    letter-spacing: normal;
+    margin-left: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.footlink:hover {
+    color: teal;
+}
+
+
+
+/*Scroll Bar*/
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+
+/*Responsive*/
+
+
+@media screen and (max-width: 600px) {
+    .hides {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 601px) {
+    .hidel {
+        display: none;
+    }
+}
